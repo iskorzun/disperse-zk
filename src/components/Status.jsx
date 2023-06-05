@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import "../styles/App.css";
 
 const Status = ({ txnStatus }) => {
   return (
@@ -7,17 +8,11 @@ const Status = ({ txnStatus }) => {
         txnStatus.status === "pending" && "animate-pulse"
       }`}
     >
-      <p
-        className={`text-sm italic font-semibold ${
-          txnStatus.status === "success" && "text-green-500"
-        }`}
-      >
-        transaction {txnStatus.status}
-      </p>
+      <p className="transaction">transaction {txnStatus.status}</p>
       <a
         href={`${"https://explorer.zksync.io/"}tx/${txnStatus.hash}`}
         target="_blank"
-        className="text-xs border-gray-600 border-b-2 font-light"
+        className="txn"
       >
         {txnStatus.hash}
       </a>

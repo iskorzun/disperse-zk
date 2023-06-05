@@ -1,6 +1,5 @@
 import { useState, useEffect, useContext } from "react";
 import { ethers } from "ethers";
-import { currentAccount } from "../App";
 import Disperse from "../artifacts/Disperse.json";
 import { parseText } from "../utils/index";
 import Recipients from "./Recipients";

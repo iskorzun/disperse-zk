@@ -128,7 +128,7 @@ const App = () => {
           </header>
         </div>
 
-        <div className="pt-16">
+        <div className="connection">
           {" "}
           {!currentAccount && renderNotConnectedContainer()}
           {network !== "zkSync Era Mainnet" ? (
@@ -139,31 +139,18 @@ const App = () => {
         </div>
 
         <div className="footer-container">
-          <a
-            className="footer-text"
-            target="_blank"
-            rel="noreferrer"
-          >{`References:\xa0`}</a>
-
-          <a
-            className="footer-text"
-            href={disperse_research_link}
-            target="_blank"
-            rel="noreferrer"
-          >{`disperse-research,\xa0`}</a>
-
-          <a
-            className="footer-text"
-            href={build_space_fonrend_link}
-            target="_blank"
-            rel="noreferrer"
-          >{`buildspace,\xa0`}</a>
-          <a
-            className="footer-text"
-            href={disperse_clone_link}
-            target="_blank"
-            rel="noreferrer"
-          >{`disperse-clone`}</a>
+          <p className="footer-text" target="_blank" rel="noreferrer">
+            references{": "}
+            <a className="footer-hlink" href={disperse_research_link}>
+              disperse-research,{" "}
+            </a>
+            <a className="footer-hlink" href={build_space_fonrend_link}>
+              buildspace,{" "}
+            </a>
+            <a className="footer-hlink" href={disperse_clone_link}>
+              disperse-clone{" "}
+            </a>
+          </p>
         </div>
       </div>
     </div>
