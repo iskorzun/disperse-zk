@@ -101,7 +101,7 @@ const App = () => {
         <div className="header-container">
           <header>
             <div className="left">
-              <p className="title">disperse</p>
+              <p className="title">disperse-zk</p>
               <a
                 className="subtitle"
                 href={contract_link}
