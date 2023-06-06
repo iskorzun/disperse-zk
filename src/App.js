@@ -11,6 +11,7 @@ const build_space_fonrend_link = `https://github.com/AlmostEfficient/domain-star
 const disperse_clone_link = "https://github.com/rajkharvar/disperse-clone";
 const contract_link =
   "https://explorer.zksync.io/address/0x754308c605820E2464200eAD8156d45351db4029";
+const disperse_zk_link = "https://github.com/Scotthamy/disperse-zk";
 
 const App = () => {
   const [network, setNetwork] = useState("");
@@ -139,18 +140,24 @@ const App = () => {
         </div>
 
         <div className="footer-container">
-          <p className="footer-text" target="_blank" rel="noreferrer">
-            references{": "}
-            <a className="footer-hlink" href={disperse_research_link}>
-              disperse-research,{" "}
+          <ul>
+            <p className="footer-text" target="_blank" rel="noreferrer">
+              references{": "}
+              <a className="footer-hlink" href={disperse_research_link}>
+                disperse-research,{" "}
+              </a>
+              <a className="footer-hlink" href={build_space_fonrend_link}>
+                buildspace,{" "}
+              </a>
+              <a className="footer-hlink" href={disperse_clone_link}>
+                disperse-clone{" "}
+              </a>
+            </p>
+
+            <a className="footer-text" href={disperse_zk_link}>
+              build on disperse-zk
             </a>
-            <a className="footer-hlink" href={build_space_fonrend_link}>
-              buildspace,{" "}
-            </a>
-            <a className="footer-hlink" href={disperse_clone_link}>
-              disperse-clone{" "}
-            </a>
-          </p>
+          </ul>
         </div>
       </div>
     </div>
