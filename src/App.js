@@ -131,10 +131,10 @@ const App = () => {
         <div className="connection">
           {" "}
           {!currentAccount && renderNotConnectedContainer()}
-          {network !== "zkSync Era Mainnet" ? (
-            renderIncorrectNetwork()
-          ) : (
+          {network == "zkSync Era Mainnet" && currentAccount ? (
             <Ether address={currentAccount} />
+          ) : (
+            renderIncorrectNetwork()
           )}
         </div>
 
