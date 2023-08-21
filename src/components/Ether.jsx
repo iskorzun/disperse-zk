@@ -13,7 +13,7 @@ const Ether = ({ address }) => {
   const [remaining, setRemaining] = useState(null);
   const [txStatus, setTxStatus] = useState(null);
 
-  const disperse_address = "0x754308c605820E2464200eAD8156d45351db4029";
+  const disperse_address = "0x4B6cB41dE674bD0958f9554736F1FBa2F508470D";
 
   const getEthBalance = async () => {
     const { ethereum } = window;
